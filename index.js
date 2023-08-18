@@ -1,4 +1,5 @@
 import "dotenv/config";
-import logger from "./srv/shared/LogUtils.js";
+import Config from "./srv/shared/Config.js";
+import app from "./srv/app.js";
 
-logger.info("hello world");
+app.listen(Config.port);
