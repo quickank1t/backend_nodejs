@@ -4,7 +4,7 @@ const router = express.Router();
 
 const defaultRoute = [
   {
-    path: "/public",
+    path: "/",
     route: healthRoute,
   },
 ];
