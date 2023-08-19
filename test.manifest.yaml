@@ -1,0 +1,6 @@
+---
+applications:
+- name: test_shoping_site
+  memory: 128M
+  buildpacks:
+  - nodejs_buildpack
