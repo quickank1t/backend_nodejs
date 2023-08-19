@@ -1,4 +1,8 @@
 import "dotenv/config";
-import logger from "./srv/shared/LogUtils.js";
+import Config from "./server/shared/Config.js";
+import logger from "./server/shared/LogUtils.js";
+import app from "./server/app.js";
 
-logger.info("hello world");
+app.listen(Config.port, () => {
+  logger.info(`App listening on port ${Config.port}!`);
+});
